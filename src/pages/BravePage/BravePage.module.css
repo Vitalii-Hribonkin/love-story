@@ -1,0 +1,95 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fdf1f1;
+    /* Тот же фон */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content_wrapper {
+    text-align: center;
+    max-width: 700px;
+}
+
+.main_heading {
+    font-size: 2.8rem;
+    color: #b04153;
+    /* Основной цвет текста */
+    margin-bottom: 20px;
+}
+
+.subheading {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.body_text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.scared {
+    color: #ff6b81;
+    font-weight: bold;
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+/* Эффект для страха */
+@keyframes shake {
+    0% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(-5px);
+    }
+}
+
+.next_button {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #d94f74;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+.next_button:hover,
+.next_button:focus {
+    background-color: #b93f63;
+    color: #fffde0;
+    transform: scale(1.05);
+}
+
+/* 📱 Адаптация */
+@media (max-width: 600px) {
+    .main_heading {
+        font-size: 2rem;
+    }
+
+    .subheading {
+        font-size: 1.1rem;
+    }
+
+    .body_text {
+        font-size: 1rem;
+    }
+
+    .next_button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

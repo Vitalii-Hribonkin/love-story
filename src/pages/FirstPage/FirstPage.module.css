@@ -1,0 +1,87 @@
+/* Контейнер для всей страницы */
+.page_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Обертка для контента (заголовок + подзаголовок + кнопка) */
+.content_wrapper {
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+/* Заголовок по центру */
+.main_heading {
+    font-size: 4rem;
+    color: #d94f74;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Подзаголовок (h2) */
+.h_two {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+/* Кнопка под заголовком */
+.main_button {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #d94f74;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.main_button:hover {
+    background-color: #b93f63;
+    transform: scale(1.05);
+    color: #fffde0;
+}
+
+/* 📱 Адаптация для планшетов */
+@media (max-width: 768px) {
+    .main_heading {
+        font-size: 2.5rem;
+    }
+
+    .h_two {
+        font-size: 1.2rem;
+    }
+
+    .main_button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* 📱 Адаптация для мобильных */
+@media (max-width: 480px) {
+    .main_heading {
+        font-size: 2rem;
+    }
+
+    .h_two {
+        font-size: 1rem;
+    }
+
+    .main_button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
