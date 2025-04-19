@@ -5,8 +5,8 @@ export default function BravePage() {
   return (
     <div className={s.page}>
       <div className={s.content_wrapper}>
-        <h1 className={s.main_heading}>Ну що, ти все ще тут? Браво!</h1>
-        <p className={s.subheading}>Не переживай, я теж безстрашний, я ж не трус!</p>
+        <h1 className={s.main_heading}>То ти така відважна?!</h1>
+        <p className={s.subheading}>Ну то я теж безстрашний, я ж не трус!</p>
 
         <p className={s.body_text}>
           P.S. мені ще як страшно! 

@@ -1,13 +1,4 @@
-body,
-html,
-#root {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(180deg, #ffe3ec, #ffd5e5);
-    overflow-x: hidden;
-}
+
 
 /* Контейнер анимации */
 .romantic-bg {

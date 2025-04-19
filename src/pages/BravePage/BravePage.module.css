@@ -4,8 +4,6 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: #fdf1f1;
-    /* Тот же фон */
     padding: 20px;
     box-sizing: border-box;
 }
